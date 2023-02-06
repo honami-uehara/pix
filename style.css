@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+body {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+/* ページ全体の設定 */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* ヘッダーブロック */
+header {
+  padding: 25px 25px;
+  color: #29abe2;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Sawarabi Mincho";
+}
+
+/* リンク */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* ナビゲーション */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  color: #666666;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+nav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* コンテンツブロック */
+.contents {
+  background-color: #29abe2;
+  padding: 40px 15px;
+}
+
+/* コンテンツブロック */
+article {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  line-height: 2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+time {
+  color: #666666;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* サブメニュー：プロフィール */
+aside {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+h2 {
+  color: #29abe2;
+  font-weight: normal;
+  text-align: center;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.profile figure {
+  text-align: center;
+}
+
+.profile p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.topics a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.topics figure {
+  width: 100px;
+  flex: none;
+}
+
+.topics h3 {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.topics img {
+  vertical-align: bottom;
+}
+/* サブメニュー：注目記事メニュー */
+.topics ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* フッターブロック */
+footer {
+  background-color: #6ac4eb;
+  padding: 25px 25px;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* .PC版：コンテナ */
+@media (min-width: 600px) {
+article {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* PC版：記事 */
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 18px;
+}
+}
+/* PC版の設定はここまで */
+
+/* PC版（大）：「コンテンツ」ブロック内のコンテナ */
+.container {
+  max-width: 1100px;
+}
+
+.contents .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* PC版（大）：プロフィール */
+.profile {
+  margin-top: 0;
+}
+
+/* .PC版（大）：記事 */
+@media (min-width: 1025px) {
+article {
+  width: 68%;
+  box-sizing: border-box;
+}
+
+PC版（大）：サブメニュー
+.sub {
+  width: 28%;
+}
+}
+/* PC（大）の設定ここまで */
+
+/* トップページ：ヒーローイメージ */
+.hero {
+  background-image: url(img/walk.jpg);
+  background-size: cover;
+  height: 532px;
+  background-position: center;
+  color: #ffffff;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-family: 'Exo 2', sans-serif;
+  text-shadow: 0 0 10px #444444;
+  text-align: center;
+}
+
+.hero p {
+  font-weight: bold;
+  text-shadow: 0 0 10px #444444;
+  margin-top: 0;
+}
+
+.hero a {
+  border: solid 2px #ffffff;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: rgb(41, 171, 226, 0.7);
+  margin-top: 10px;
+}
+
+/* トップページ：記事一覧 */
+.toppost {
+  padding: 15px;
+}
+.toppost article {
+  padding: 0;
+  width: 48%;
+  flex: none;
+}
+
+.toppost h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.toppost div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.toppost article:not(:nth-last-child(-n+2)) {
+  margin-bottom: 12px;
+}
