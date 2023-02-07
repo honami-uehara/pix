@@ -126,14 +126,52 @@ h2 {
   margin-left: 10px;
 }
 
+/* 「サイトについて」ページ */
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: solid 1px #cccccc;
+  padding: 18px;
+}
+
+th {
+  width: 4em;
+  text-align: left;
+  background-color: #135977;
+  color: #ffffff;
+}
+
+td {
+  background-color: #e8eef9;
+}
+
+/* お問合せページ */
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
 .topics img {
   vertical-align: bottom;
+}
+
+.textarea {
+  height: 120px;
+}
+
+input[type="submit"] {
+  background-color: #ffaa00;
+  border: none;
+  -webkit-appearance: none;
 }
 /* サブメニュー：注目記事メニュー */
 .topics ul {
   list-style-type: none;
   padding: 0;
 }
+
 /* フッターブロック */
 footer {
   background-color: #6ac4eb;
@@ -160,6 +198,20 @@ header .container {
   margin-right: auto;
 }
 
+/* PC版：トップページ：ヒーローイメージ */
+.hero h1 {
+  font-size: 72px;
+}
+
+/* PC版：トップページ：記事一覧 */
+.toppost article {
+  width: 23%;
+}
+
+.toppost article:not(:nth-last-child(-n+2)) {
+  margin-bottom: 0;
+}
+asa
 /* PC版：記事 */
 h1 {
   font-size: 40px;
@@ -168,7 +220,12 @@ h1 {
 p {
   font-size: 18px;
 }
+/* PC版：「お問合せ」ページ */
+input[type="submit"] {
+  width: 250px;
 }
+}
+
 /* PC版の設定はここまで */
 
 /* PC版（大）：「コンテンツ」ブロック内のコンテナ */
